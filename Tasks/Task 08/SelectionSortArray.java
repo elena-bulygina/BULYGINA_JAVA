@@ -1,4 +1,4 @@
-  import java.util.Scanner;
+﻿  import java.util.Scanner;
 
 //  Реализовать сортировку выбором.
 //  Пусть есть массив                                                              3 2 10 11 15 -5 6
@@ -29,7 +29,8 @@ class SelectionSortArray {
  			System.out.print(arr[i]+" ");
 
 		int arrsort[] = new int[n]; 
-		arrsort = arr; 
+		for (int i=0; i<n; i++)
+			arrsort[i] = arr[i]; 
 		int minelem, indexminelem;
 
 		for (int i = 0; i < n; i++) {
